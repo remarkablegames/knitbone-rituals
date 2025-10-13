@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/remarkablegames/renpy-deckbuilder/master/game/gui/window_icon.png" alt="Ren'Py Deckbuilder">
+  <img src="https://raw.githubusercontent.com/remarkablegames/knitbone-card-game/master/game/gui/window_icon.png" alt="KnitBone Card Game">
 </p>
 
-# Ren'Py Deckbuilder
+# KnitBone Card Game
 
-![release](https://img.shields.io/github/v/release/remarkablegames/renpy-deckbuilder)
-[![build](https://github.com/remarkablegames/renpy-deckbuilder/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/renpy-deckbuilder/actions/workflows/build.yml)
-[![lint](https://github.com/remarkablegames/renpy-deckbuilder/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/renpy-deckbuilder/actions/workflows/lint.yml)
+![release](https://img.shields.io/github/v/release/remarkablegames/knitbone-card-game)
+[![build](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/build.yml)
+[![lint](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/lint.yml)
 
-🃏 Ren'Py Deckbuilder Template.
+🦴 KnitBone card game.
 
 Play the game on:
 
-- [remarkablegames](https://remarkablegames.org/renpy-deckbuilder)
+- [remarkablegames](https://remarkablegames.org/knitbone-card-game)
 
 ## Credits
 
@@ -55,18 +55,8 @@ renpy --version
 Clone the repository to the `Projects Directory`:
 
 ```sh
-git clone https://github.com/remarkablegames/renpy-deckbuilder.git
-cd renpy-deckbuilder
-```
-
-Rename the project:
-
-```sh
-git grep -l "Ren'Py Deckbuilder" | xargs sed -i '' -e "s/Ren'Py Deckbuilder/My Game/g"
-```
-
-```sh
-git grep -l 'renpy-deckbuilder' | xargs sed -i '' -e 's/renpy-deckbuilder/my-game/g'
+git clone https://github.com/remarkablegames/knitbone-card-game.git
+cd knitbone-card-game
 ```
 
 Replace the assets:
@@ -115,7 +105,3 @@ Lint the game:
 ```sh
 renpy game lint
 ```
-
-## License
-
-[MIT](LICENSE)
