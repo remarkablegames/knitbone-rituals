@@ -1,10 +1,10 @@
 {
     "0": {
-        "scene": "bg plain",
+        "scene": "bg studio1",
         "enemies": [
             {
-                "name": "Boy",
-                "image": "boy",
+                "id": "entity1",
+                "name": "Entity A",
                 "health": 5,
                 "actions": [
                     {
@@ -21,7 +21,8 @@
                 ]
             },
             {
-                "name": "Girl",
+                "id": "entity2",
+                "name": "Entity B",
                 "health": 5,
                 "attack_min": 1,
                 "attack_max": 2,

@@ -1,16 +1,10 @@
-image boy attack = Image("enemies/boy/boy.png")
-image boy heal = Image("enemies/boy/boy.png")
-image boy hover = Image("enemies/boy/boy hover.png")
-image boy idle = Image("enemies/boy/boy.png")
+image entity1 attack = Image("entity/entity1.png")
+image entity1 heal = Image("entity/entity1.png")
+image entity1 hover = Image("entity/entity1.png")
+image entity1 idle = Image("entity/entity1.png")
 
 
-image girl attack = Image("enemies/girl/girl.png")
-image girl heal = Image("enemies/girl/girl.png")
-image girl hover = Image("enemies/girl/girl hover.png")
-image girl idle = Image("enemies/girl/girl.png")
-
-
-image guy attack = Image("enemies/guy/guy.png")
-image guy heal = Image("enemies/guy/guy.png")
-image guy hover = Image("enemies/guy/guy hover.png")
-image guy idle = Image("enemies/guy/guy.png")
+image entity2 attack = Image("entity/entity2.png")
+image entity2 heal = Image("entity/entity2.png")
+image entity2 hover = Image("entity/entity2.png")
+image entity2 idle = Image("entity/entity2.png")

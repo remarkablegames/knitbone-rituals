@@ -5,11 +5,8 @@ init python:
             self.id = kwargs.get("id", self.name.lower())
             self.type = kwargs.get("type", "")
 
-            self.height = 1000
-            if self.id == "girl":
-                self.width = 228
-            elif self.id in ["boy", "guy"]:
-                self.width = 211
+            self.width = 576
+            self.height = 1024
 
             self.health = self.health_max = kwargs.get("health", 0)
             self.energy = self.energy_max = kwargs.get("energy", 0)
