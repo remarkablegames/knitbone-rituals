@@ -1,9 +1,12 @@
 init python:
+    from uuid import uuid4
+
+
     class RPGCharacter():
         def __init__(self, **kwargs) -> None:
+            self.id = str(uuid4())
             self.name = kwargs.get("name", "")
-            self.id = kwargs.get("id", self.name.lower())
-            self.type = kwargs.get("type", "")
+            self.image_name = kwargs.get("image", self.name.lower())
 
             self.width = 576
             self.height = 1024
@@ -46,7 +49,7 @@ init python:
                 state = "heal"
             else:
                 state = "idle"
-            return f"{self.id} {state}"
+            return f"{self.image_name} {state}"
 
 
         def say(self) -> None:

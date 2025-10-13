@@ -3,8 +3,8 @@
         "scene": "bg studio1",
         "enemies": [
             {
-                "id": "entity1",
                 "name": "Entity A",
+                "image": "entity1",
                 "health": 5,
                 "actions": [
                     {
@@ -21,8 +21,8 @@
                 ]
             },
             {
-                "id": "entity2",
                 "name": "Entity B",
+                "image": "entity2",
                 "health": 5,
                 "attack_min": 1,
                 "attack_max": 2,
