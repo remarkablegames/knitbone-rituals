@@ -3,11 +3,9 @@ init python:
 
 
     class Card:
-        LABEL_DESCRIPTION_YPOS = 230
-        LABEL_NAME_YPOS = 5
-        width = 250
-        height = 350
-        offset = 80
+        WIDTH = 250
+        HEIGHT = 350
+        OFFSET = 80
 
 
         def __init__(self, **kwargs) -> None:
@@ -16,9 +14,8 @@ init python:
             self.action = kwargs.get("action", {})
             self.value = kwargs.get("value", 0)
 
-            image = kwargs.get("image", "card")
-            self.image = f"cards/{image}.png"
-            self.name = image.capitalize()
+            self.image = f"cards/{kwargs.get('image', 'transparent')}.png"
+            self.name = kwargs.get("name", "")
 
             if renpy.variant("mobile") or renpy.variant("touch"):
                 self.label_description_ypos = 0.5
@@ -138,8 +135,8 @@ init python:
             Calculate x-position.
             """
             x = config.screen_width / 2
-            x -= (self.width + self.offset * (len(deck.hand) - 1)) / 2
-            x += deck.hand.index(self) * self.offset
+            x -= (self.WIDTH + self.OFFSET * (len(deck.hand) - 1)) / 2
+            x += deck.hand.index(self) * self.OFFSET
             return int(x)
 
 
@@ -147,7 +144,7 @@ init python:
             """
             Calculate y-position.
             """
-            return config.screen_height - self.height
+            return config.screen_height - self.HEIGHT
 
 
         def get_pos(self):

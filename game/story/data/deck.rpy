@@ -5,10 +5,10 @@ init python:
     class Deck:
         def __init__(self) -> None:
             self.cards = [
-                Card(action={"attack": {"value": 3, "all": 1}}, cost=2),
-                Card(action={"attack": {"value": 3, "stun": 1}}, cost=2),
-                Card(action={"attack": {"value": 3}}, cost=1),
-                Card(action={"attack": {"value": 6}, "draw": {"value": 1}}, cost=2),
+                Card(action={"attack": {"value": 3, "all": 1}}, cost=2, image="knife", name="Knife"),
+                Card(action={"attack": {"value": 3, "stun": 1}}, cost=2, image="knife", name="Knife"),
+                Card(action={"attack": {"value": 3}}, cost=1, image="knife", name="Knife"),
+                Card(action={"attack": {"value": 6}, "draw": {"value": 1}}, cost=2, image="knife", name="Attack"),
                 Card(action={"draw": {"value": 2}}, cost=1),
                 Card(action={"energy": {"value": 1}}, cost=0),
                 Card(action={"energy": {"value": 2}}, cost=1),

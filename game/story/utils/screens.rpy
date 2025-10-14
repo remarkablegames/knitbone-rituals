@@ -106,20 +106,21 @@ screen draw_pile():
 
 screen card_frame(card, draggable=None):
     frame:
-        background Frame(card.image)
+        background Frame("cards/card.png")
+        add card.image
         label card.label_name():
             xalign 0.5
-            ypos card.LABEL_NAME_YPOS
+            ypos 5
         label card.label_cost()
         label card.label_description():
             xalign 0.5
-            ypos card.LABEL_DESCRIPTION_YPOS
+            ypos 230
             padding (5, 0)
-        xysize card.width, card.height
+        xysize card.WIDTH, card.HEIGHT
 
         if draggable:
             mousearea:
-                area (0, 0, card.offset, card.height)
+                area (0, 0, card.OFFSET, card.HEIGHT)
                 hovered [
                     Queue(MUSIC_CHANNEL_UI, "ui/mouserelease1.ogg"),
                     Function(draggable.top),
