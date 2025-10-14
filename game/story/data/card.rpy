@@ -3,8 +3,8 @@ init python:
 
 
     class Card:
-        label_description_yalign = 0.5
-        label_name_ypos = 5
+        LABEL_DESCRIPTION_YPOS = 230
+        LABEL_NAME_YPOS = 5
         width = 250
         height = 350
         offset = 80

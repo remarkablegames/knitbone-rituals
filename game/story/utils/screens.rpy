@@ -109,11 +109,11 @@ screen card_frame(card, draggable=None):
         background Frame(card.image)
         label card.label_name():
             xalign 0.5
-            ypos card.label_name_ypos
+            ypos card.LABEL_NAME_YPOS
         label card.label_cost()
         label card.label_description():
             xalign 0.5
-            yalign card.label_description_yalign
+            ypos card.LABEL_DESCRIPTION_YPOS
             padding (5, 0)
         xysize card.width, card.height
 
