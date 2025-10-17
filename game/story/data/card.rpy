@@ -2,6 +2,9 @@ init python:
     from uuid import uuid4
 
 
+    INFINITY = float("inf")
+
+
     class Card:
         WIDTH = 250
         HEIGHT = 350
@@ -13,12 +16,10 @@ init python:
             self.cost = kwargs.get("cost", 0)
             self.action = kwargs.get("action", {})
             self.value = kwargs.get("value", 0)
+            self.uses = kwargs.get("uses", INFINITY)
 
             self.image = f"cards/{kwargs.get('image', 'transparent')}.png"
             self.name = kwargs.get("name", "")
-
-            if renpy.variant("mobile") or renpy.variant("touch"):
-                self.label_description_ypos = 0.5
 
 
         def label_size(self, label: str) -> str:
@@ -88,6 +89,9 @@ init python:
                     label += " once per battle"
 
                 label += "\n"
+
+            if self.uses != INFINITY:
+                label += f"Uses: {self.uses}"
 
             label = label.rstrip('\n')
 
@@ -194,6 +198,7 @@ init python:
                         else:
                             renpy.invoke_in_thread(renpy.with_statement, vpunch)
 
+            self.uses -= 1
             deck.discard_card(self)
 
 
