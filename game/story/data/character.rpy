@@ -6,10 +6,13 @@ init python:
         def __init__(self, **kwargs) -> None:
             self.id = str(uuid4())
             self.name = kwargs.get("name", "")
-            self.image_name = kwargs.get("image", self.name.lower())
 
-            self.width = 576
-            self.height = 1024
+            image = kwargs.get("image", "")
+            if image:
+                self.image_name = image
+                width, height = renpy.image_size(f"images/entity/{image} hover.png")
+                self.width = width
+                self.height = height
 
             self.health = self.health_max = kwargs.get("health", 0)
             self.energy = self.energy_max = kwargs.get("energy", 0)
