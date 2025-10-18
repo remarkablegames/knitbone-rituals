@@ -39,19 +39,15 @@ init python:
             size = 1.0
             length = len(label)
 
-            if length < 5:
-                size = 0.95
-            elif length < 15:
-                size = 0.9
-            elif length < 25:
+            if length <= 5:
                 size = 0.85
-            elif length < 35:
+            elif length <= 7:
                 size = 0.8
             else:
-                size = 0.75
+                size = 0.7
 
-            if renpy.variant("mobile") or renpy.variant("touch"):
-                size -= 0.15
+            # if renpy.variant("mobile") or renpy.variant("touch"):
+            #     size -= 0.15
 
             return f"{{size=*{size}}}" if not size == 1.0 else ""
 
@@ -60,14 +56,14 @@ init python:
             """
             Name label.
             """
-            return self.label_size(self.name) + "{color=[colors.label]}{b}{k=-2}" + self.name
+            return self.label_size(self.name) + "{color=[colors.label]}{k=-2}" + self.name
 
 
         def label_cost(self) -> str:
             """
             Cost label.
             """
-            return self.label_size(str(self.cost)) + emojis.get(self.cost)
+            return "{size=*.85}" + emojis.get(self.cost)
 
 
         def label_description(self) -> str:

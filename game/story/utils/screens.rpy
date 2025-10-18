@@ -111,13 +111,15 @@ screen card_frame(card, draggable=None):
             xpos -5 ypos -5
             xysize card.WIDTH, card.HEIGHT
         label card.label_name():
-            xalign 0.5
-            ypos 5
-        label card.label_cost()
+            xpos 48
+            ypos 19
+        label card.label_cost():
+            xpos 7
+            ypos 15
         label card.label_description():
-            xalign 0.5
-            ypos 230
-            padding (5, 0)
+            xalign 0
+            ypos 220
+            padding (10, 0)
         xysize card.WIDTH, card.HEIGHT
 
         if draggable:
