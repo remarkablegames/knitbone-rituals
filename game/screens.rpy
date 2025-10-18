@@ -137,6 +137,7 @@ style window:
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
+    padding (20, 20)
 
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
@@ -157,6 +158,8 @@ style say_label:
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
+    font "fonts/chonkybitsbold.otf"
+    color "#232323"
 
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
@@ -240,6 +243,8 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    font "fonts/chonkybitsbold.otf"
+    color "#3a3a3a"
 
 
 ## Quick Menu screen ###########################################################
