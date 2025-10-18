@@ -1,7 +1,7 @@
 screen stat(name, current, max):
     text "[name]: [current]/[max]"
     bar value AnimatedValue(current, max):
-        xsize 300
+        xsize 360
 
 
 screen player_stats():
@@ -19,7 +19,10 @@ screen player_stats():
 
 screen player_end_turn():
     frame:
-        padding (10, 10) xalign 1.0 yalign 1.0
+        padding (10, 10)
+        xalign 1.0
+        yalign 1.0
+
         textbutton "End Turn":
             action Function(player.end_turn)
 
@@ -29,7 +32,8 @@ screen player_deck(xalign_pos, yalign_pos):
         padding (10, 10)
         textbutton ("View Draw Pile" if levels.battle else "View Deck"):
             action Show("draw_pile")
-        xalign xalign_pos yalign yalign_pos
+        xalign xalign_pos
+        yalign yalign_pos
 
 
 screen tooltip():
@@ -56,7 +60,6 @@ screen enemy_stats(enemy, xalign_pos):
                 action NullAction()
                 text "[enemy.name]"
                 tooltip (enemy.say() or "...")
-                xalign 0.5
 
     use tooltip
 
