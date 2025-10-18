@@ -13,8 +13,6 @@ screen player_stats():
                 use stat("Health", player.health, player.health_max)
                 null height 15
                 use stat("Energy", player.energy, player.energy_max)
-                null height 15
-                text "Money: $[money]"
 
 
 screen player_end_turn():
@@ -30,7 +28,7 @@ screen player_end_turn():
 screen player_deck(xalign_pos, yalign_pos):
     frame:
         padding (10, 10)
-        textbutton ("View Draw Pile" if levels.battle else "View Deck"):
+        textbutton ("Draw Pile" if levels.battle else "Deck"):
             action Show("draw_pile")
         xalign xalign_pos
         yalign yalign_pos
