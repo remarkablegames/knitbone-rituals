@@ -18,6 +18,7 @@ init python:
             self.value = kwargs.get("value", 0)
             self.uses = kwargs.get("uses", INFINITY)
 
+            self.background = "cards/card.png"
             self.image = f"cards/{kwargs.get('image', 'transparent')}.png"
             self.name = kwargs.get("name", "")
 
