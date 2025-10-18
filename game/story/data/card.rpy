@@ -18,9 +18,18 @@ init python:
             self.value = kwargs.get("value", 0)
             self.uses = kwargs.get("uses", INFINITY)
 
-            self.background = "cards/card.png"
-            self.image = f"cards/{kwargs.get('image', 'transparent')}.png"
             self.name = kwargs.get("name", "")
+            image = kwargs.get("image", "transparent")
+            self.image = f"cards/{image}.png"
+
+            if image == "knife":
+                self.background = "cards/card red.png"
+            elif image == "knitbone":
+                self.background = "cards/card green.png"
+            elif image == "candles":
+                self.background = "cards/card yellow.png"
+            else:
+                self.background = "cards/card.png"
 
 
         def label_size(self, label: str) -> str:
