@@ -28,7 +28,7 @@ style gui_text:
 style button:
     properties gui.button_properties("button")
     hover_sound "ui/mouserelease1.ogg"
-    activate_sound "ui/click_003.ogg"
+    activate_sound "ui/click.ogg"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
