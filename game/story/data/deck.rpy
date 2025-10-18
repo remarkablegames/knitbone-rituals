@@ -10,10 +10,10 @@ init python:
                 Card(action={"attack": {"value": 3}}, cost=1, image="knife", name="Knife"),
                 Card(action={"attack": {"value": 6}, "draw": {"value": 1}}, cost=2, image="knife", name="Knife"),
                 Card(action={"draw": {"value": 2}}, cost=1, image="candles", name="Candles"),
-                Card(action={"energy": {"value": 1}}, cost=0, image="knitbone", name="Comfrey"),
-                Card(action={"energy": {"value": 2}}, cost=1, image="knitbone", name="Comfrey"),
+                Card(action={"energy": {"value": 1}}, cost=0, image="pendulum", name="Pendulum"),
+                Card(action={"energy": {"value": 2}}, cost=1, image="pendulum", name="Pendulum"),
                 Card(action={"heal": {"value": 3, "times": 2}}, cost=2, uses=1, image="knitbone", name="Knitbone"),
-                Card(action={"heal": {"value": 3}}, cost=1, image="knitbone", game="Knitbone"),
+                Card(action={"heal": {"value": 3}}, cost=1, image="knitbone", name="Knitbone"),
             ]
 
             self.draw_pile = []

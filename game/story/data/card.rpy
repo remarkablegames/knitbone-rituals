@@ -22,12 +22,14 @@ init python:
             image = kwargs.get("image", "transparent")
             self.image = f"cards/{image}.png"
 
-            if image == "knife":
+            if image == "candles":
+                self.background = "cards/card yellow.png"
+            elif image == "knife":
                 self.background = "cards/card red.png"
             elif image == "knitbone":
                 self.background = "cards/card green.png"
-            elif image == "candles":
-                self.background = "cards/card yellow.png"
+            elif image == "pendulum":
+                self.background = "cards/card blue.png"
             else:
                 self.background = "cards/card.png"
 
