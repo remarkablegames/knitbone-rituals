@@ -155,5 +155,5 @@ screen shop_return():
 
     frame:
         xalign 0.5
-        textbutton "Pass":
+        textbutton "Skip":
             action Jump("shop")
