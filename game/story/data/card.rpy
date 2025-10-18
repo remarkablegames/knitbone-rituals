@@ -188,7 +188,7 @@ init python:
             heal = self.action.get("heal")
             if heal:
                 for _ in range(heal.get("times", 1)):
-                    target.recover(heal["value"])
+                    player.recover(heal["value"])
 
             attack = self.action.get("attack")
             if attack:
