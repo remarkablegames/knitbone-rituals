@@ -1,7 +1,11 @@
+init python:
+    TEXT_STYLE = "{size=32}{k=-2}"
+
+
 screen stat(name, current, max):
-    text "[name]: [current]/[max]"
+    text TEXT_STYLE + "[name] [current]/[max]"
     bar value AnimatedValue(current, max):
-        xsize 360
+        xsize 300
 
 
 screen player_stats():
@@ -10,7 +14,7 @@ screen player_stats():
         use player_deck(0, 0)
         frame:
             vbox:
-                use stat("Health", player.health, player.health_max)
+                use stat("HP", player.health, player.health_max)
                 null height 15
                 use stat("Energy", player.energy, player.energy_max)
 
@@ -42,7 +46,7 @@ screen tooltip():
             prefer_top True
             frame:
                 background Solid((255, 255, 255, 225))
-                text tooltip color "#000"
+                text TEXT_STYLE + tooltip color "#000"
                 xalign 0.5
 
 
@@ -52,11 +56,11 @@ screen enemy_stats(enemy, xalign_pos):
         xalign xalign_pos
 
         vbox:
-            use stat("Health", enemy.health, enemy.health_max)
+            use stat("HP", enemy.health, enemy.health_max)
 
             button:
                 action NullAction()
-                text "[enemy.name]"
+                text TEXT_STYLE + enemy.name
                 tooltip (enemy.say() or "...")
 
     use tooltip

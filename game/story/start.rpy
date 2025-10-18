@@ -1,7 +1,6 @@
 label start:
 
-    # Remove bottom menu
-    $ quick_menu = False
+    $ quick_menu = False # hide bottom menu
 
     $ levels.restart()
 
