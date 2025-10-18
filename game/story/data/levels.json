@@ -3,31 +3,64 @@
         "scene": "bg studio1",
         "enemies": [
             {
-                "name": "Entity A",
+                "name": "Gloon",
                 "image": "entity1",
-                "health": 5,
+                "health": 15,
                 "actions": [
                     {
                         "say": "{name} is thinking..."
                     },
                     {
-                        "say": "{name} deals 1 damage.",
-                        "attack": 1
+                        "say": "{name} deals 2 damage.",
+                        "attack": 2
                     },
                     {
-                        "say": "{name} heals 1 health.",
-                        "heal": 1
+                        "say": "{name} heals 3 health.",
+                        "heal": 3
+                    }
+                ]
+            }
+        ]
+    },
+
+    "1": {
+        "scene": "bg studio1",
+        "enemies": [
+            {
+                "name": "Gloon",
+                "image": "entity1",
+                "health": 15,
+                "actions": [
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} deals 2 damage.",
+                        "attack": 2
+                    },
+                    {
+                        "say": "{name} heals 3 health.",
+                        "heal": 3
                     }
                 ]
             },
             {
-                "name": "Entity B",
+                "name": "Yog",
                 "image": "entity2",
-                "health": 5,
-                "attack_min": 1,
-                "attack_max": 2,
-                "heal_min": 1,
-                "heal_max": 2
+                "health": 10,
+                "actions": [
+                    {
+                        "say": "{name} deals 3 damage.",
+                        "attack": 3
+                    },
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} heals 2 health.",
+                        "heal": 2
+                    }
+                ]
             }
         ]
     }

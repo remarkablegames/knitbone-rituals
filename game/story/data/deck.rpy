@@ -5,15 +5,16 @@ init python:
     class Deck:
         def __init__(self) -> None:
             self.cards = [
-                Card(action={"attack": {"value": 3, "all": 1}}, cost=2, image="knife", name="Knife", uses=1),
-                Card(action={"attack": {"value": 3, "stun": 1}}, cost=2, image="knife", name="Knife", uses=2),
+                # Card(action={"attack": {"value": 3, "all": 1}}, cost=2, image="knife", name="Knife", uses=1),
+                # Card(action={"attack": {"value": 3, "stun": 1}}, cost=2, image="knife", name="Knife", uses=2),
                 Card(action={"attack": {"value": 3}}, cost=1, image="knife", name="Knife"),
-                Card(action={"attack": {"value": 6}, "draw": {"value": 1}}, cost=2, image="knife", name="Knife"),
+                Card(action={"attack": {"value": 3}}, cost=1, image="knife", name="Knife"),
+                # Card(action={"attack": {"value": 6}, "draw": {"value": 1}}, cost=2, image="knife", name="Knife"),
                 Card(action={"draw": {"value": 2}}, cost=1, image="candles", name="Candles"),
-                Card(action={"energy": {"value": 1}}, cost=0, image="pendulum", name="Pendulum"),
                 Card(action={"energy": {"value": 2}}, cost=1, image="pendulum", name="Pendulum"),
-                Card(action={"heal": {"value": 3, "times": 2}}, cost=2, uses=1, image="knitbone", name="Knitbone"),
-                Card(action={"heal": {"value": 3}}, cost=1, image="knitbone", name="Knitbone"),
+                # Card(action={"heal": {"value": 3, "times": 2}}, cost=2, uses=1, image="knitbone", name="Knitbone"),
+                Card(action={"heal": {"value": 3}}, cost=2, image="knitbone", name="Knitbone"),
+                Card(action={"heal": {"value": 3}}, cost=2, image="knitbone", name="Knitbone"),
             ]
 
             self.draw_pile = []
