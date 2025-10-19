@@ -105,8 +105,8 @@
         "scene": "bg studio4",
         "enemies": [
             {
-                "name": "Yog",
-                "image": "entity2",
+                "name": "Hastur",
+                "image": "entity3",
                 "health": 21,
                 "actions": [
                     {
@@ -123,8 +123,8 @@
                 ]
             },
             {
-                "name": "Hastur",
-                "image": "entity3",
+                "name": "Gloon",
+                "image": "entity1",
                 "health": 24,
                 "actions": [
                     {
@@ -145,8 +145,8 @@
                 ]
             },
             {
-                "name": "Gloon",
-                "image": "entity1",
+                "name": "Yog",
+                "image": "entity2",
                 "health": 18,
                 "actions": [
                     {
