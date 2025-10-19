@@ -9,11 +9,15 @@ label end:
     hide screen enemy_stats2
     hide screen enemy_stats3
 
+    play music "music/theme3.ogg" volume 0.7
+
     scene bg hallway at zoomout
     with fade
 
     "You escape with your life intact."
 
     scene black with Dissolve(1)
+
+    stop music fadeout 1
 
     return

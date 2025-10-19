@@ -34,11 +34,11 @@ label shop:
                 card_type = renpy.random.choice(
                     ["all"] * (1 if wins > 3 else 0) +
                     ["attack"] * 6 +
-                    ["cost"] * (1 if wins > 2 else 0) +
+                    ["cost"] * (1 if wins > 3 else 0) +
                     ["draw"] * 3 +
                     ["energy"] * (1 if wins > 3 else 0) +
                     ["heal"] * 6 +
-                    ["stun"] * (1 if wins > 1 else 0) +
+                    ["stun"] * (1 if wins > 2 else 0) +
                     ["times"] * (1 if wins > 3 else 0) +
                     []
                 )

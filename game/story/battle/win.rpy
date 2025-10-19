@@ -12,6 +12,8 @@ label win:
 
     $ levels.end()
 
+    play music "music/theme3.ogg" volume 0.7
+
     hide screen player_end_turn
     hide screen player_stats
 
@@ -40,14 +42,14 @@ label win:
 
     elif wins == 2:
         call reward_card(
-            Card(action={"attack": {"value": 3, "stun": True}}, cost=1, image="knife", name="Blunt Blade", uses=5),
-            "{i}Blunt Blade{/i} stuns the enemy, but it has a limited number of uses."
+            Card(action={"attack": {"value": 3, "stun": True}}, cost=1, image="knife", name="Blunt Blade", uses=3),
+            "{i}Blunt Blade{/i} stuns the enemy, but can only be used 3 times."
         )
 
     elif wins == 4:
         call reward_card(
-            Card(action={"attack": {"value": 3, "all": True}}, cost=2, image="knife", name="Multi Blade", uses=5),
-            "{i}Multi Blade{/i} damages all enemies, but it has a limited number of uses."
+            Card(action={"attack": {"value": 3, "all": True}}, cost=2, image="knife", name="Multi Blade", uses=3),
+            "{i}Multi Blade{/i} damages all enemies, but can only be used 3 times."
         )
 
     if wins % 2 == 1:
@@ -69,9 +71,9 @@ label reward_card(card, dialogue):
             $ deck.cards.append(card)
             play audio "sound/draw.ogg"
 
-        "No (+[max(wins, 3)] gold)
+        "No (+[max(wins, 6)] gold)
         {tooltip}Sell card and earn gold":
-            $ gold += max(wins, 3)
+            $ gold += max(wins, 6)
             play audio "sound/gold.ogg"
 
     hide screen card
