@@ -35,7 +35,7 @@ label win:
         jump reward
 
     elif wins == 2:
-        $ card = Card(action={"attack": {"value": 3, "stun": True}}, cost=1, image="knife", name="Blunt Blade", uses=10)
+        $ card = Card(action={"attack": {"value": 3, "stun": True}}, cost=1, image="knife", name="Blunt Blade", uses=5)
         call reward_card(card)
 
     jump shop
