@@ -1,7 +1,4 @@
-default player = Player(
-    health=10,
-    energy=3,
-)
+default player = Player()
 
 
 init python:
@@ -10,17 +7,18 @@ init python:
         YSIZE = 170
 
 
-        def __init__(self, **kwargs) -> None:
-            super().__init__(**kwargs)
+        def __init__(self, health=10, energy=3) -> None:
+            super().__init__(health=health)
 
             # battle
             self.draw_cards = 3
-            self.energy = self.energy_max = kwargs.get("energy", 0)
+            self.energy = self.energy_max = energy
 
             # shop
             self.cards_bought = 0
             self.cards_removed = 0
             self.cards_upgraded = 0
+            self.rewards_bought = 0
             self.shop_cards = 2
 
 

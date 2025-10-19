@@ -232,13 +232,14 @@ init python:
                 )
 
                 card = {
-                    "action": {},
+                    "action": {
+                        card_type: {
+                            "value": renpy.random.randint(wins, max(3, wins)),
+                        },
+                    },
                     "cost": renpy.random.randint(1, 1 if wins < 5 else 2),
                 }
 
-                card["action"][card_type] = {
-                    "value": renpy.random.randint(wins, max(3, wins)),
-                }
 
                 if card_type == "attack":
                     card["image"] = "knife"
