@@ -163,5 +163,95 @@
                 ]
             }
         ]
+    },
+
+    "4": {
+        "scene": "bg studio4",
+        "enemies": [
+            {
+                "name": "Hastur",
+                "image": "entity3",
+                "health": 24,
+                "actions": [
+                    {
+                        "say": "{name} deals 5 damage.",
+                        "attack": 5
+                    },
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} heals 5 health.",
+                        "heal": 5
+                    },
+                    {
+                        "say": "{name} is thinking..."
+                    }
+                ]
+            },
+            {
+                "name": "Daoloth",
+                "image": "entity4",
+                "health": 42,
+                "actions": [
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} deals 10 damage.",
+                        "attack": 10
+                    },
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} heals 10 health.",
+                        "heal": 10
+                    }
+                ]
+            },
+            {
+                "name": "Gloon",
+                "image": "entity1",
+                "health": 24,
+                "actions": [
+                    {
+                        "say": "{name} deals 5 damage.",
+                        "attack": 5
+                    },
+                    {
+                        "say": "{name} deals 4 damage.",
+                        "attack": 4
+                    },
+                    {
+                        "say": "{name} deals 3 damage.",
+                        "attack": 3
+                    }
+                ]
+            },
+            {
+                "name": "Yog",
+                "image": "entity2",
+                "health": 21,
+                "actions": [
+                    {
+                        "say": "{name} heals 5 health.",
+                        "heal": 5
+                    },
+                    {
+                        "say": "{name} deals 5 damage.",
+                        "attack": 5
+                    },
+                    {
+                        "say": "{name} deals 3 damage.",
+                        "attack": 3
+                    },
+                    {
+                        "say": "{name} heals 3 health.",
+                        "heal": 3
+                    }
+                ]
+            }
+        ]
     }
 }
