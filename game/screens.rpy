@@ -244,7 +244,6 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
     font "fonts/chonkybitsbold.otf"
-    color "#3a3a3a"
 
 
 ## Quick Menu screen ###########################################################
