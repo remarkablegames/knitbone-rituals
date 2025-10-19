@@ -25,7 +25,7 @@
     },
 
     "1": {
-        "scene": "bg studio1",
+        "scene": "bg studio2",
         "enemies": [
             {
                 "name": "Gloon",
@@ -60,7 +60,7 @@
     },
 
     "2": {
-        "scene": "bg studio2",
+        "scene": "bg studio3",
         "enemies": [
             {
                 "name": "Yog",
@@ -102,7 +102,7 @@
     },
 
     "3": {
-        "scene": "bg studio2",
+        "scene": "bg studio4",
         "enemies": [
             {
                 "name": "Yog",
