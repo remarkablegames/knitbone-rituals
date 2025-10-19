@@ -8,13 +8,13 @@ label shop:
         cost_upgrade_stat = cost_base + player.stats_upgraded
         cost_card_buy = cost_base + player.cards_bought
         cost_card_upgrade = cost_base * 2 + player.cards_upgraded
-        cost_card_remove = cost_base * 3 + player.cards_removed
+        cost_card_remove = cost_base * 2 + player.cards_removed
 
     menu:
         "What do you want to do?"
 
         "Buy a card (-[cost_card_buy] gold)
-        {tooltip}Add 1 card to your deck ([player.shop_cards] choices, {i}nonrefundable{/i})" if gold >= cost_card_buy:
+        {tooltip}Add 1 card to your deck ([player.shop_cards] choices, nonrefundable)" if gold >= cost_card_buy:
             python:
                 config.menu_include_disabled = False
                 gold -= cost_card_buy
@@ -55,7 +55,7 @@ label shop:
             call screen card_upgrade(cards, card_type, card_value)
 
         "Remove a card (-[cost_card_remove] gold)
-        {tooltip}Remove 1 card from your deck ({i}nonrefundable{/i})" if gold >= cost_card_remove:
+        {tooltip}Remove 1 card from your deck (nonrefundable)" if gold >= cost_card_remove:
             python:
                 config.menu_include_disabled = False
                 gold -= cost_card_remove
@@ -64,7 +64,7 @@ label shop:
             call screen card_remove
 
         "Upgrade a stat (-[cost_upgrade_stat] gold)
-        {tooltip}Upgrade a stat like max health ({i}nonrefundable{/i})" if gold >= cost_upgrade_stat:
+        {tooltip}Upgrade a stat like max health (nonrefundable)" if gold >= cost_upgrade_stat:
             python:
                 config.menu_include_disabled = False
                 gold -= cost_upgrade_stat

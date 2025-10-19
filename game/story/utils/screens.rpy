@@ -124,7 +124,7 @@ screen card_frame(card, draggable=None):
             xysize card.WIDTH, card.HEIGHT
         label card.label_name():
             xpos 48
-            ypos 19
+            ypos (5 if " " in card.name else 19)
         label card.label_cost():
             xpos 7
             ypos 15
@@ -141,3 +141,10 @@ screen card_frame(card, draggable=None):
                     Queue(MUSIC_CHANNEL_UI, "ui/mouserelease1.ogg"),
                     Function(draggable.top),
                 ]
+
+
+screen card(card, xalign_pos=0.5, yalign_pos=0.5):
+    vbox:
+        xalign xalign_pos
+        yalign yalign_pos
+        use card_frame(card)
