@@ -18,15 +18,25 @@ Play the game on:
 
 ### Art
 
-- [Uncle Mugen](https://lemmasoft.renai.us/forums/viewtopic.php?t=17302)
+- [aespipu](https://aespipu.itch.io/)
+
+### Development
+
+- [remarkablemark](https://github.com/remarkablemark)
+
+### Music
+
+- [seamus](https://seemvevo.itch.io/)
 
 ### Audio
 
 - [Kenney Interface Sounds](https://kenney.nl/assets/interface-sounds)
 - Pixabay
+  - [Bag of Gold](https://pixabay.com/sound-effects/bag-of-gold-28095/)
   - [Heal Up](https://pixabay.com/sound-effects/heal-up-39285/)
   - [Health Pickup](https://pixabay.com/sound-effects/health-pickup-6860/)
   - [Heartbeat 01 - BRVHRTZ](https://pixabay.com/sound-effects/heartbeat-01-brvhrtz-225058/)
+  - [Knife Stab Sound Effect](https://pixabay.com/sound-effects/knife-stab-sound-effect-36354/)
   - [Punch Sound Effects](https://pixabay.com/sound-effects/punch-sound-effects-28649/)
   - [card mixing](https://pixabay.com/sound-effects/card-mixing-48088/)
 
