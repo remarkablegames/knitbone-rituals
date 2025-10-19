@@ -29,6 +29,7 @@ label win:
     $ loot = max(renpy.random.randint(wins, round(wins * 1.5) + 1), 3)
     $ gold += loot + interest
 
+    play audio "sound/gold.ogg"
     "You earned [loot] + [interest] (interest) gold."
 
     if wins == 1:
@@ -56,7 +57,7 @@ label reward_card(card):
         "No (+[max(wins, 3)] gold)
         {tooltip}Sell card and earn gold":
             $ gold += max(wins, 3)
-            # play audio "sound/gold.ogg" volume 0.5
+            play audio "sound/gold.ogg"
 
     hide screen card
 

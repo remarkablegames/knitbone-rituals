@@ -21,6 +21,7 @@ label shop:
                 player.cards_bought += 1
                 cards = Card.generate(player.shop_cards)
 
+            play audio "sound/gold.ogg"
             call screen card_add(cards)
 
         "Upgrade a card (-[cost_card_upgrade] gold)
@@ -52,6 +53,7 @@ label shop:
                 card_value = renpy.random.randint(1, 3)
                 cards = deck.get_cards(player.shop_cards, card_type)
 
+            play audio "sound/gold.ogg"
             call screen card_upgrade(cards, card_type, card_value)
 
         "Remove a card (-[cost_card_remove] gold)
@@ -61,6 +63,7 @@ label shop:
                 gold -= cost_card_remove
                 player.cards_removed += 1
 
+            play audio "sound/gold.ogg"
             call screen card_remove
 
         "Upgrade a stat (-[cost_upgrade_stat] gold)
@@ -70,6 +73,7 @@ label shop:
                 gold -= cost_upgrade_stat
                 player.stats_upgraded += 1
 
+            play audio "sound/gold.ogg"
             jump reward
 
         "Battle":
