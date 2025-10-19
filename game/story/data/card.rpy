@@ -111,16 +111,21 @@ init python:
             """
             Upgrade label.
             """
+            label = "{size=36}"
+
             if action == "all":
-                return f"Select a card to apply effects to {{b}}{{color=[colors.note]}}all{{/color}}{{/b}} enemies:"
+                label += f"Select a card to apply effects to {{b}}{{color=[colors.note]}}all{{/color}}{{/b}} enemies:"
             elif action == "cost":
-                return f"Select a card to decrease {{b}}{{color=[colors.note]}}cost{{/color}}{{/b}} by {emojis.get(1)}:"
+                label += f"Select a card to decrease {{b}}{{color=[colors.note]}}cost{{/color}}{{/b}} by {emojis.get(1)}:"
             elif action == "stun":
-                return f"Select a card to {{b}}{{color=[colors.note]}}stun{{/color}}{{/b}} an enemy:"
+                label += f"Select a card to {{b}}{{color=[colors.note]}}stun{{/color}}{{/b}} an enemy:"
             elif action == "times":
-                return f"Select a card to increase action by 1 {{b}}{{color=[colors.note]}}time{{/color}}{{/b}}:"
+                label += f"Select a card to increase action by 1 {{b}}{{color=[colors.note]}}time{{/color}}{{/b}}:"
             else:
-                return f"Select a card to increase {{b}}{{color=[colors.note]}}{action}{{/color}}{{/b}} by {{b}}{value}{{/b}}:"
+                label += f"Select a card to increase {{b}}{{color=[colors.note]}}{action}{{/color}}{{/b}} by {{b}}{value}{{/b}}:"
+
+
+            return label
 
 
         def upgrade(self, action: str, value=1) -> None:
