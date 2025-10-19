@@ -370,12 +370,23 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    # frame:
+    #     style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # use navigation
+
+    hbox:
+        xalign 0.44
+        yalign 0.54
+
+        frame:
+            background Solid((0, 0, 0, 0))
+            textbutton "Enter":
+                action Start()
+                text_color gui.muted_color
+                text_hover_color gui.text_color
 
     if gui.show_name:
 
