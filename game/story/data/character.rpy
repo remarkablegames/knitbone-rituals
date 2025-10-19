@@ -62,13 +62,13 @@ init python:
             return self.action("say", "").format(name=self.name)
 
 
-        def hurt(self, value: int) -> None:
+        def hurt(self, value: int, sound="punch") -> None:
             """
             Attack character.
             """
             if not value:
                 return
-            renpy.sound.queue("sound/punch.ogg", relative_volume=0.5)
+            renpy.sound.queue(f"sound/{sound}.ogg", relative_volume=0.8)
             self.health -= value
 
 

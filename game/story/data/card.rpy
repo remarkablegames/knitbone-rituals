@@ -203,7 +203,7 @@ init python:
                     else:
                         targets = [target]
                     for target in targets:
-                        target.hurt(attack["value"])
+                        target.hurt(attack["value"], sound="stab" if "knife" in self.image else "punch")
                         if is_enemy:
                             if attack.get("stun"):
                                 target.stunned = True
