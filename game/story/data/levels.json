@@ -60,12 +60,12 @@
     },
 
     "2": {
-        "scene": "bg studio1",
+        "scene": "bg studio2",
         "enemies": [
             {
                 "name": "Yog",
                 "image": "entity2",
-                "health": 20,
+                "health": 18,
                 "actions": [
                     {
                         "say": "{name} deals 5 damage.",
@@ -83,7 +83,71 @@
             {
                 "name": "Gloon",
                 "image": "entity1",
-                "health": 25,
+                "health": 21,
+                "actions": [
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} deals 5 damage.",
+                        "attack": 5
+                    },
+                    {
+                        "say": "{name} heals 3 health.",
+                        "heal": 3
+                    }
+                ]
+            }
+        ]
+    },
+
+    "3": {
+        "scene": "bg studio2",
+        "enemies": [
+            {
+                "name": "Yog",
+                "image": "entity2",
+                "health": 21,
+                "actions": [
+                    {
+                        "say": "{name} deals 5 damage.",
+                        "attack": 5
+                    },
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} heals 3 health.",
+                        "heal": 3
+                    }
+                ]
+            },
+            {
+                "name": "Hastur",
+                "image": "entity3",
+                "health": 24,
+                "actions": [
+                    {
+                        "say": "{name} is thinking..."
+                    },
+                    {
+                        "say": "{name} deals 5 damage.",
+                        "attack": 5
+                    },
+                    {
+                        "say": "{name} deals 3 damage.",
+                        "attack": 3
+                    },
+                    {
+                        "say": "{name} heals 3 health.",
+                        "heal": 3
+                    }
+                ]
+            },
+            {
+                "name": "Gloon",
+                "image": "entity1",
+                "health": 18,
                 "actions": [
                     {
                         "say": "{name} is thinking..."
