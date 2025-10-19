@@ -16,4 +16,6 @@ label lose:
     scene black onlayer enemies
     scene black with fade
 
-    jump end
+    "Wins: [wins]"
+
+    return

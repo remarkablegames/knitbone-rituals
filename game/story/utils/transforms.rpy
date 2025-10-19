@@ -25,3 +25,15 @@ transform slight_shake:
 
 transform speak_zoom:
     linear 0.15 zoom 1.025
+
+
+transform zoomin:
+    truecenter
+    zoom 1
+    linear 3 zoom 1.1
+
+
+transform zoomout:
+    truecenter
+    zoom 1.1
+    linear 3 zoom 1.0

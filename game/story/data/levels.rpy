@@ -19,6 +19,7 @@ init python:
             try:
                 return self.levels[str(self.level)]
             except KeyError:
+                renpy.jump("end")
                 return self.generate()
 
 

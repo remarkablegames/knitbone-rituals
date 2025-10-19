@@ -9,6 +9,12 @@ label end:
     hide screen enemy_stats2
     hide screen enemy_stats3
 
-    "Wins: {b}[wins]{/b}"
+    scene bg hallway at zoomout
+    with fade
+
+    "You escape with your life intact."
+
+    scene black
+    with fade
 
     return
