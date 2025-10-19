@@ -1,7 +1,6 @@
 default gold = 0
 default loot = 0
 default interest = 0
-default rewards = 0
 default wins = 0
 
 
@@ -32,8 +31,7 @@ label win:
 
     "You earned [loot] + [interest] (interest) gold."
 
-    if wins % 3 == 1:
-        $ rewards += 1
+    if wins == 1:
         jump reward
     else:
         jump shop

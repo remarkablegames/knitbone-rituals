@@ -18,8 +18,8 @@ init python:
             self.cards_bought = 0
             self.cards_removed = 0
             self.cards_upgraded = 0
-            self.rewards_bought = 0
             self.shop_cards = 2
+            self.stats_upgraded = 0
 
 
         def end_turn(self) -> None:

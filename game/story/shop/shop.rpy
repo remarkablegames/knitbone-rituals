@@ -5,7 +5,7 @@ label shop:
     python:
         config.menu_include_disabled = True
         cost_base = max(wins, 3)
-        cost_reward = cost_base + player.rewards_bought
+        cost_upgrade_stat = cost_base + player.stats_upgraded
         cost_card_buy = cost_base + player.cards_bought
         cost_card_upgrade = cost_base * 2 + player.cards_upgraded
         cost_card_remove = cost_base * 3 + player.cards_removed
@@ -63,13 +63,12 @@ label shop:
 
             call screen card_remove
 
-        "Get reward (-[cost_reward] gold)
-        {tooltip}Upgrade a stat ({i}nonrefundable{/i})" if gold >= cost_reward:
+        "Upgrade a stat (-[cost_upgrade_stat] gold)
+        {tooltip}Upgrade a stat like max health ({i}nonrefundable{/i})" if gold >= cost_upgrade_stat:
             python:
                 config.menu_include_disabled = False
-                gold -= cost_reward
-                rewards += 1
-                player.rewards_bought += 1
+                gold -= cost_upgrade_stat
+                player.stats_upgraded += 1
 
             jump reward
 
