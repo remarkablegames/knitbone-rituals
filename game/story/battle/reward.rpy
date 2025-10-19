@@ -6,7 +6,7 @@ label reward:
     menu:
         "Claim a reward:"
 
-        "Reroll rewards (-$[wins // 2])" if gold >= wins // 2 and wins > 1:
+        "Reroll rewards (-[wins // 2] gold)" if gold >= wins // 2 and wins > 1:
             $ gold -= wins // 2
             play audio "sound/gold.ogg"
             jump reward

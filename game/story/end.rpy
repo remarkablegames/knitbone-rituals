@@ -14,7 +14,6 @@ label end:
 
     "You escape with your life intact."
 
-    scene black
-    with fade
+    scene black with Dissolve(1)
 
     return

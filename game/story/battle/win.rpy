@@ -38,13 +38,20 @@ label win:
             "{i}Blood Blade{/i} deals extra damage based on your missing health."
         )
 
-        jump reward
-
     elif wins == 2:
         call reward_card(
             Card(action={"attack": {"value": 3, "stun": True}}, cost=1, image="knife", name="Blunt Blade", uses=5),
-            "{i}Blunt Blade{/i} damages and stuns the enemy, but it has a limited number of uses."
+            "{i}Blunt Blade{/i} stuns the enemy, but it has a limited number of uses."
         )
+
+    elif wins == 4:
+        call reward_card(
+            Card(action={"attack": {"value": 3, "all": True}}, cost=2, image="knife", name="Multi Blade", uses=5),
+            "{i}Multi Blade{/i} damages all enemies, but it has a limited number of uses."
+        )
+
+    if wins % 2 == 1:
+        jump reward
 
     jump shop
 

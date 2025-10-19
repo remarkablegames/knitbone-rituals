@@ -13,8 +13,7 @@ label lose:
 
     "You have been defeated."
 
-    scene black onlayer enemies
-    scene black with fade
+    scene black onlayer enemies with Dissolve(1)
 
     "Wins: [wins]"
 
