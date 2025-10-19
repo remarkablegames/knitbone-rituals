@@ -10,9 +10,9 @@ init python:
                 Card(action={"attack": {"value": 3}}, cost=1, image="knife", name="Knife"),
                 # Card(action={"attack": {"value": 6}, "draw": {"value": 1}}, cost=2, image="knife", name="Knife"),
                 Card(action={"draw": {"value": 2}}, cost=1, image="candles", name="Candles"),
-                Card(action={"energy": {"value": 2}}, cost=1, image="pendulum", name="Pendulum"),
+                Card(action={"energy": {"value": 2}, "draw": {"value": 0}}, cost=1, image="pendulum", name="Pendulum"),
                 # Card(action={"heal": {"value": 3, "times": 2}}, cost=2, uses=1, image="knitbone", name="Knitbone"),
-                Card(action={"heal": {"value": 3}}, cost=2, image="knitbone", name="Knitbone"),
+                Card(action={"heal": {"value": 3}, "draw": {"value": 0}}, cost=2, image="knitbone", name="Knitbone"),
                 Card(action={"heal": {"value": 3}}, cost=2, image="knitbone", name="Knitbone"),
             ]
 

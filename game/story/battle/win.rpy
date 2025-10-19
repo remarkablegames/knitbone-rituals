@@ -26,7 +26,7 @@ label win:
 
     $ wins += 1
     $ interest = ceil(gold * 0.4)
-    $ loot = renpy.random.randint(wins, round(wins * 1.5) + 1)
+    $ loot = max(renpy.random.randint(wins, round(wins * 1.5) + 1), 3)
     $ gold += loot + interest
 
     "You earned [loot] + [interest] (interest) gold."
