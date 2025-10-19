@@ -84,6 +84,9 @@ init python:
                 label += action.capitalize()
                 label += f" {value}"
 
+                if data.get("blood"):
+                    label += f"+{player.health_max - player.health}"
+
                 if data.get("times", 1) > 1:
                     label += f" ×{data.get('times')}"
 
@@ -197,13 +200,19 @@ init python:
 
             attack = self.action.get("attack")
             if attack:
+                attack_value = attack["value"]
+                if attack.get("blood"):
+                    attack_value += player.health_max - player.health
+
                 for _ in range(attack.get("times", 1)):
                     if is_enemy and attack.get("all"):
                         targets = enemies.alive()
                     else:
                         targets = [target]
+
                     for target in targets:
-                        target.hurt(attack["value"], sound="stab" if "knife" in self.image else "punch")
+                        target.hurt(attack_value, sound="stab" if "knife" in self.image else "punch")
+
                         if is_enemy:
                             if attack.get("stun"):
                                 target.stunned = True

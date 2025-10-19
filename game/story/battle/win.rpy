@@ -33,22 +33,30 @@ label win:
     "You earned [loot] + [interest] (interest) gold."
 
     if wins == 1:
+        call reward_card(
+            Card(action={"attack": {"value": 1, "blood": True}}, cost=2, image="knife", name="Blood Blade"),
+            "{i}Blood Blade{/i} deals extra damage based on your missing health."
+        )
+
         jump reward
 
     elif wins == 2:
-        $ card = Card(action={"attack": {"value": 3, "stun": True}}, cost=1, image="knife", name="Blunt Blade", uses=5)
-        call reward_card(card)
+        call reward_card(
+            Card(action={"attack": {"value": 3, "stun": True}}, cost=1, image="knife", name="Blunt Blade", uses=5),
+            "{i}Blunt Blade{/i} damages and stuns the enemy, but it has a limited number of uses."
+        )
 
     jump shop
 
 
-label reward_card(card):
+label reward_card(card, dialogue):
 
     show screen card(card)
 
-    "Add this card to your deck?"
+    "[dialogue]"
 
     menu:
+        "Add this card to your deck?"
 
         "Yes":
             $ deck.cards.append(card)
