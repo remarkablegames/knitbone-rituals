@@ -4,7 +4,7 @@ init -1 python:
         black = "#000"
         energy = "#add8e6"
         gold = "#ffd700"
-        heal = "#af0"
+        heal = "#2e8b57"
         label = "#000"
         note = "#09c"
         white = "#fff"
