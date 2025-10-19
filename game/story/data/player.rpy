@@ -15,10 +15,7 @@ init python:
 
             # battle
             self.draw_cards = 3
-            self.moves = 3
-            self.moves_max = 3
-            self.turns = 0
-            self.turns_max = 0
+            self.energy = self.energy_max = kwargs.get("energy", 0)
 
             # shop
             self.cards_bought = 0
@@ -31,7 +28,6 @@ init python:
             """
             End player turn.
             """
-            self.turns -= 1
             deck.discard_hand()
             renpy.hide_screen("player_end_turn")
             renpy.jump("enemy_turn")

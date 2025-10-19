@@ -81,7 +81,6 @@ init python:
             level = self.get()
 
             player.energy = player.energy_max
-            player.moves = player.moves_max
 
             if self.level >= 0:
                 renpy.scene()

@@ -23,7 +23,7 @@ label win:
 
     show screen player_gold
 
-    "You survived the encounter!"
+    "You survived the encounter."
 
     $ wins += 1
     $ interest = ceil(gold * 0.4)

@@ -6,9 +6,9 @@ label shop:
         config.menu_include_disabled = True
         cost_base = max(wins, 3)
         cost_reward = cost_base
-        cost_card_buy = cost_base
-        cost_card_upgrade = cost_base * 2
-        cost_card_remove = cost_base * 3
+        cost_card_buy = cost_base + player.cards_bought
+        cost_card_upgrade = cost_base * 2 + player.cards_upgraded
+        cost_card_remove = cost_base * 3 + player.cards_removed
 
     menu:
         "What do you want to do?"
@@ -18,7 +18,9 @@ label shop:
             python:
                 config.menu_include_disabled = False
                 gold -= cost_card_buy
+                player.cards_bought += 1
                 cards = Card.generate(player.shop_cards)
+
             call screen card_add(cards)
 
         "Upgrade a card (-[cost_card_upgrade] gold)
@@ -26,19 +28,30 @@ label shop:
             python:
                 config.menu_include_disabled = False
                 gold -= cost_card_upgrade
+                player.cards_upgraded += 1
+
                 card_type = renpy.random.choice(
-                    ["all"] * 1 +
+                    ["all"] * (1 if wins > 3 else 0) +
                     ["attack"] * 6 +
-                    ["cost"] * 1 +
+                    ["cost"] * (1 if wins > 2 else 0) +
                     ["draw"] * 3 +
-                    ["energy"] * 3 +
-                    ["heal"] * 3 +
-                    ["stun"] * 1 +
-                    ["times"] * 1 +
+                    ["energy"] * (1 if wins > 3 else 0) +
+                    ["heal"] * 6 +
+                    ["stun"] * (1 if wins > 1 else 0) +
+                    ["times"] * (1 if wins > 3 else 0) +
                     []
                 )
+
+                if card_type in ["attack", "heal"]:
+                    card_value = renpy.random.randint(1, 3)
+                elif card_type in ["draw", "energy"]:
+                    card_value = renpy.random.randint(1, 2)
+                else:
+                    card_value = 1
+
                 card_value = renpy.random.randint(1, 3)
                 cards = deck.get_cards(player.shop_cards, card_type)
+
             call screen card_upgrade(cards, card_type, card_value)
 
         "Remove a card (-[cost_card_remove] gold)
@@ -46,6 +59,8 @@ label shop:
             python:
                 config.menu_include_disabled = False
                 gold -= cost_card_remove
+                player.cards_removed += 1
+
             call screen card_remove
 
         "Get reward (-[cost_reward] gold)
@@ -54,13 +69,16 @@ label shop:
                 config.menu_include_disabled = False
                 gold -= cost_reward
                 rewards += 1
+
             jump reward
 
         "Battle":
             python:
                 config.menu_include_disabled = False
                 levels.next()
+
             hide screen player_deck
+
             jump battle
 
 
@@ -72,7 +90,7 @@ screen card_add(cards):
         xalign 0.5 yalign 0.5
         has vbox
 
-        text "Add 1 card to your deck:"
+        text "{size=36}Add 1 card to your deck:"
 
         null height 25
 

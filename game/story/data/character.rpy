@@ -15,7 +15,6 @@ init python:
                 self.height = height
 
             self.health = self.health_max = kwargs.get("health", 0)
-            self.energy = self.energy_max = kwargs.get("energy", 0)
 
             self.attack = 0
             self.attack_min = kwargs.get("attack_min", 0)
@@ -44,8 +43,6 @@ init python:
             """
             if state:
                 pass
-            elif not player.turns:
-                state = "idle"
             elif self.action("attack", 0) > 0:
                 state = "attack"
             elif self.action("heal", 0) > 0:
