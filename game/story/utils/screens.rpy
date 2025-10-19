@@ -8,6 +8,13 @@ screen stat(name, current, max):
         xsize 300
 
 
+screen player_gold():
+    frame:
+        background Solid((0, 0, 0, 100))
+        text TEXT_STYLE + "{color=[colors.gold]}Gold: [gold]"
+        xpos (40 if renpy.variant("web") else 0)
+
+
 screen player_stats():
     vbox:
         yalign 1.0

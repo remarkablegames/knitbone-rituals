@@ -9,8 +9,8 @@ label reward:
     menu:
         "Claim your reward (remaining: [rewards]):"
 
-        "Reroll rewards (-$[wins // 2])" if money >= wins // 2 and wins > 1:
-            $ money -= wins // 2
+        "Reroll rewards (-$[wins // 2])" if gold >= wins // 2 and wins > 1:
+            $ gold -= wins // 2
             jump reward
 
         "Increase max health by {color=[colors.heal]}+[reward_heal * 2]":

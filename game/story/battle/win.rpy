@@ -1,4 +1,4 @@
-default money = 0
+default gold = 0
 default loot = 0
 default interest = 0
 default rewards = 0
@@ -21,14 +21,16 @@ label win:
     hide screen enemy_stats2
     hide screen enemy_stats3
 
-    "You won the battle!"
+    show screen player_gold
+
+    "You survived the encounter!"
 
     $ wins += 1
-    $ interest = ceil(money * 0.4)
+    $ interest = ceil(gold * 0.4)
     $ loot = renpy.random.randint(wins, round(wins * 1.5) + 1)
-    $ money += loot + interest
+    $ gold += loot + interest
 
-    "You earned $[loot] + $[interest] (interest)."
+    "You earned [loot] + [interest] (interest) gold."
 
     if wins % 3 == 1:
         $ rewards += 1
