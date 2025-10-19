@@ -1,5 +1,5 @@
 default player = Player(
-    health=15,
+    health=10,
     energy=3,
 )
 
