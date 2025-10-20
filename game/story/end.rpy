@@ -9,7 +9,7 @@ label end:
     hide screen enemy_stats2
     hide screen enemy_stats3
 
-    play music "music/theme3.ogg" volume 0.7
+    play music "music/theme5.ogg" volume 0.7
 
     scene bg hallway at zoomout
     with fade

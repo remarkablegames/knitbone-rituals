@@ -219,7 +219,7 @@ init python:
                         target.hurt(attack_value, sound="stab" if "knife" in self.image else "punch")
 
                         if attack.get("comfrey"):
-                            card = Card(action={"heal": {"value": 3}}, cost=0, image="knitbone", name="Comfrey", uses=1)
+                            card = Card(action={"heal": {"value": 3}, "energy": {"value": 1}}, cost=0, image="knitbone", name="Comfrey", uses=1)
                             deck.cards.append(card)
                             deck.hand.append(card)
                             renpy.sound.queue("sound/draw.ogg")

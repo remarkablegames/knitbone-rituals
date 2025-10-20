@@ -12,6 +12,9 @@ label win:
 
     $ levels.end()
 
+    if wins + 1 == len(levels.levels):
+        jump end
+
     play music "music/theme3.ogg" volume 0.7
 
     hide screen player_end_turn
@@ -28,10 +31,11 @@ label win:
 
     $ wins += 1
     $ interest = ceil(gold * 0.4)
-    $ loot = max(renpy.random.randint(wins, round(wins * 1.5) + 1), 3)
+    $ loot = wins + 2
     $ gold += loot + interest
 
     play audio "sound/gold.ogg"
+
     "You earned [loot] + [interest] (interest) gold."
 
     if wins == 1:
@@ -48,7 +52,7 @@ label win:
 
     elif wins == 3:
         call reward_card(
-            Card(action={"attack": {"value": 3, "comfrey": True}}, cost=2, image="knife", name="Light Blade", uses=3),
+            Card(action={"attack": {"value": 3, "comfrey": True}}, cost=1, image="knife", name="Light Blade", uses=3),
             "{i}Light Blade{/i} creates a single-use healing card ({i}Comfrey{/i})."
         )
 

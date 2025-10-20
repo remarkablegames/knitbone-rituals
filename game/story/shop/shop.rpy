@@ -7,8 +7,8 @@ label shop:
         cost_base = max(wins, 3)
         cost_upgrade_stat = cost_base + player.stats_upgraded
         cost_card_buy = cost_base + player.cards_bought
-        cost_card_upgrade = cost_base * 2 + player.cards_upgraded
-        cost_card_remove = cost_base * 2 + player.cards_removed
+        cost_card_upgrade = cost_base + player.cards_upgraded
+        cost_card_remove = cost_base + player.cards_removed
 
     menu:
         "What do you want to do?"
@@ -50,7 +50,6 @@ label shop:
                 else:
                     card_value = 1
 
-                card_value = renpy.random.randint(1, 3)
                 cards = deck.get_cards(player.shop_cards, card_type)
 
             play audio "sound/gold.ogg"
