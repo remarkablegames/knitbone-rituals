@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/remarkablegames/knitbone-rituals/compare/v1.0.0...v1.1.0) (2025-10-20)
+
+
+### Features
+
+* replace web and window icons ([a654b90](https://github.com/remarkablegames/knitbone-rituals/commit/a654b90f2b6d8bbd94820f9d6dc4028e0aaf9d84))
+
 ## [1.0.0](https://github.com/remarkablegames/knitbone-rituals/tree/v1.0.0) (2025-10-20)
 
 ### Features
