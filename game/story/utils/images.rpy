@@ -14,3 +14,9 @@ image entity3 attack = Image("entity/entity3.png")
 image entity3 heal = Image("entity/entity3.png")
 image entity3 hover = Image("entity/entity3 hover.png")
 image entity3 idle = Image("entity/entity3.png")
+
+
+image entity4 attack = Image("entity/entity4.png")
+image entity4 heal = Image("entity/entity4.png")
+image entity4 hover = Image("entity/entity4 hover.png")
+image entity4 idle = Image("entity/entity4.png")
