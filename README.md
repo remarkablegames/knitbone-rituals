@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/remarkablegames/knitbone-rituals/master/game/gui/window_icon.png" alt="KnitBone Rituals">
+  <img src="https://raw.githubusercontent.com/remarkablegames/knitbone-rituals/master/game/gui/window_icon.png" alt="KnitBone : Rituals">
 </p>
 
 # KnitBone: Rituals
@@ -8,11 +8,16 @@
 [![build](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/build.yml)
 [![lint](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/lint.yml)
 
-🦴 KnitBone Rituals is a roguelike deckbuilding card game.
+🦴 **KnitBone : Rituals** is a roguelike deckbuilding card game.
+
+> _Knitbone : Rituals_ is a standalone spinoff of the original visual novel, [KnitBone](https://remarkablegames.itch.io/knitbone).
+>
+> This time, Ryohei drags you into another of his “guided rituals” …and before you know it, you’re pulled straight into a TV, trapped in a surreal world of cards, combat, and strange symbols.
 
 Play the game on:
 
 - [remarkablegames](https://remarkablegames.org/knitbone-rituals)
+- [itch.io](https://remarkablegames.itch.io/knitbone-rituals)
 
 ## Credits
 
