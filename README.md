@@ -19,6 +19,13 @@ Play the game on:
 - [remarkablegames](https://remarkablegames.org/knitbone-rituals)
 - [itch.io](https://remarkablegames.itch.io/knitbone-rituals)
 
+## How To Play
+
+- Drag your card to the enemy.
+- Hover over the enemy's name to see their next move.
+- Press **End Turn** when out of **Energy**.
+- Defeat all the enemies while staying alive!
+
 ## Credits
 
 ### Art
