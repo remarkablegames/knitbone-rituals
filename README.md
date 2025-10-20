@@ -70,13 +70,6 @@ git clone https://github.com/remarkablegames/knitbone-rituals.git
 cd knitbone-rituals
 ```
 
-Replace the assets:
-
-- [ ] `game/gui/main_menu.png`
-- [ ] `game/gui/window_icon.png`
-- [ ] `web-icon.png`
-- [ ] `web-presplash.webp`
-
 ## Run
 
 Launch the project:
