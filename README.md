@@ -8,7 +8,7 @@
 [![build](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/build.yml)
 [![lint](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/lint.yml)
 
-🦴 KnitBone: Rituals is a roguelike deckbuilding card game.
+🦴 KnitBone Rituals is a roguelike deckbuilding card game.
 
 Play the game on:
 
