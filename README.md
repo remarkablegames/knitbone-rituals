@@ -19,6 +19,11 @@ Play the game on:
 - [remarkablegames](https://remarkablegames.org/knitbone-rituals)
 - [itch.io](https://remarkablegames.itch.io/knitbone-rituals)
 
+Or download:
+
+- [Mac](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/mac.zip)
+- [Windows](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/pc.zip)
+
 ## How To Play
 
 - Drag your card to the enemy.
