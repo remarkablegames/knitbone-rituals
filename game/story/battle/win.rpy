@@ -46,6 +46,12 @@ label win:
             "{i}Blunt Blade{/i} stuns the enemy, but can only be used 3 times."
         )
 
+    elif wins == 3:
+        call reward_card(
+            Card(action={"attack": {"value": 3, "comfrey": True}}, cost=2, image="knife", name="Light Blade", uses=3),
+            "{i}Light Blade{/i} creates a single-use healing card ({i}Comfrey{/i})."
+        )
+
     elif wins == 4:
         call reward_card(
             Card(action={"attack": {"value": 3, "all": True}}, cost=2, image="knife", name="Multi Blade", uses=3),

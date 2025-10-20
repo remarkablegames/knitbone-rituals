@@ -45,8 +45,10 @@ init python:
                 size = 0.85
             elif length <= 7:
                 size = 0.8
-            else:
+            elif length <= 10:
                 size = 0.7
+            else:
+                size = 0.65
 
             # if renpy.variant("mobile") or renpy.variant("touch"):
             #     size -= 0.15
@@ -58,7 +60,7 @@ init python:
             """
             Name label.
             """
-            return self.label_size(self.name) + "{color=[colors.label]}{k=-2}" + self.name
+            return self.label_size(self.name) + "{color=[colors.label]}{k=-2}" + self.name.replace(" ", "\n")
 
 
         def label_cost(self) -> str:
@@ -91,13 +93,16 @@ init python:
                     label += f" ×{data.get('times')}"
 
                 if data.get("stun"):
-                    label += " Stun"
+                    label += "\nStun"
 
                 if data.get("all"):
-                    label += " All"
+                    label += "\nAll"
 
                 if action == "turns":
                     label += " once per battle"
+
+                if data.get("comfrey"):
+                    label += "\nCreate {color=[colors.heal]}Comfrey{/color}"
 
                 label += "\n"
 
@@ -212,6 +217,12 @@ init python:
 
                     for target in targets:
                         target.hurt(attack_value, sound="stab" if "knife" in self.image else "punch")
+
+                        if attack.get("comfrey"):
+                            card = Card(action={"heal": {"value": 3}}, cost=0, image="knitbone", name="Comfrey", uses=1)
+                            deck.cards.append(card)
+                            deck.hand.append(card)
+                            renpy.sound.queue("sound/draw.ogg")
 
                         if is_enemy:
                             if attack.get("stun"):
