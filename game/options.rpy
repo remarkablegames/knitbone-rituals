@@ -30,7 +30,10 @@ define config.version = "1.0.0-alpha" # x-release-please-version
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-{a=https://github.com/remarkablegames/knitbone-card-game#credits}Credits{/a}
+{color=#efefef}Credits{/color}\n
+• {a=https://github.com/remarkablemark}remarkablemark{/a} – Developer\n
+• {a=https://aespipu.itch.io}aespipu{/a} – Artist\n
+• {a=https://seemvevo.itch.io}seamus{/a} – Composer
 """)
 
 
