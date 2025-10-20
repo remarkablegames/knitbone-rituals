@@ -38,6 +38,7 @@ Play the game on:
   - [Heartbeat 01 - BRVHRTZ](https://pixabay.com/sound-effects/heartbeat-01-brvhrtz-225058/)
   - [Knife Stab Sound Effect](https://pixabay.com/sound-effects/knife-stab-sound-effect-36354/)
   - [Punch Sound Effects](https://pixabay.com/sound-effects/punch-sound-effects-28649/)
+  - [Soothing White Noise](https://pixabay.com/sound-effects/soothing-white-noise-323619/)
   - [card mixing](https://pixabay.com/sound-effects/card-mixing-48088/)
 
 ## Prerequisites
