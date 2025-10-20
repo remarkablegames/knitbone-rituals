@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/remarkablegames/knitbone-card-game/master/game/gui/window_icon.png" alt="KnitBone Card Game">
+  <img src="https://raw.githubusercontent.com/remarkablegames/knitbone-rituals/master/game/gui/window_icon.png" alt="KnitBone Rituals">
 </p>
 
-# KnitBone Card Game
+# KnitBone: Rituals
 
-![release](https://img.shields.io/github/v/release/remarkablegames/knitbone-card-game)
-[![build](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/build.yml)
-[![lint](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone-card-game/actions/workflows/lint.yml)
+![release](https://img.shields.io/github/v/release/remarkablegames/knitbone-rituals)
+[![build](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/build.yml)
+[![lint](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/knitbone-rituals/actions/workflows/lint.yml)
 
-🦴 KnitBone card game.
+🦴 KnitBone: Rituals is a roguelike deckbuilding card game.
 
 Play the game on:
 
-- [remarkablegames](https://remarkablegames.org/knitbone-card-game)
+- [remarkablegames](https://remarkablegames.org/knitbone-rituals)
 
 ## Credits
 
@@ -66,8 +66,8 @@ renpy --version
 Clone the repository to the `Projects Directory`:
 
 ```sh
-git clone https://github.com/remarkablegames/knitbone-card-game.git
-cd knitbone-card-game
+git clone https://github.com/remarkablegames/knitbone-rituals.git
+cd knitbone-rituals
 ```
 
 Replace the assets:
