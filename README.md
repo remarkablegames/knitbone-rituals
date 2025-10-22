@@ -29,7 +29,7 @@ Read the [blog post](https://remarkablegames.org/posts/knitbone-rituals/) or wat
 
 ## How To Play
 
-- Drag your card to the enemy.
+- Drag the card to the player (bottom-left bar) or to the enemy (entity).
 - Hover over the enemy's name to see their next move.
 - Press **End Turn** when out of **Energy**.
 - Defeat all the enemies while staying alive!
