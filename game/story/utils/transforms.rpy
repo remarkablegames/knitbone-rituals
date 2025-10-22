@@ -1,3 +1,18 @@
+transform idle:
+    subpixel True
+    choice:
+        pause 0.3
+        easein 2.0 yzoom 0.98
+    choice:
+        pause 0.6
+        easein 2.0 yzoom 0.97
+    choice:
+        pause 0.9
+        easein 2.0 yzoom 0.96
+    easein 2.0 yzoom 1.0
+    repeat
+
+
 transform idle_zoom:
     linear 0.15 zoom 1.0
 
