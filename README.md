@@ -25,6 +25,8 @@ Or download:
 - [Mac](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/mac.zip)
 - [Linux](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/pc.zip)
 
+Read the [blog post](https://remarkablegames.org/posts/knitbone-rituals/).
+
 ## How To Play
 
 - Drag your card to the enemy.
