@@ -230,7 +230,7 @@ init python:
 
                             at_list=[shake]
 
-                            if renpy.variant("pc"):
+                            if not renpy.variant("web"):
                                 at_list.append(idle)
 
                             renpy.show(target.image(), at_list=at_list, layer=LAYER_ENEMIES)

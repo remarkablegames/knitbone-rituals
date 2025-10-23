@@ -31,7 +31,7 @@ init python:
                 renpy.show_screen(f"enemy_stats{index}", enemy, xalign_position)
                 at_list=[position(xalign_position)]
 
-                if renpy.variant("pc"):
+                if not renpy.variant("web"):
                     at_list.append(idle)
 
                 renpy.show(enemy.image(), at_list=at_list, layer=LAYER_ENEMIES)
