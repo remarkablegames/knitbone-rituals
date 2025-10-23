@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.0...v1.2.1) (2025-10-23)
+
+
+### Performance Improvements
+
+* change logic from pc to not web for idle transform ([6e8e41f](https://github.com/remarkablegames/knitbone-rituals/commit/6e8e41fcd38ded3fe7de574db39bad506db425cf))
+* disable enemy idle on web since it's laggy ([22b2bac](https://github.com/remarkablegames/knitbone-rituals/commit/22b2bac70ee7a541bf19acce44dee99c7ac5b4ea))
+
 ## [1.2.0](https://github.com/remarkablegames/knitbone-rituals/compare/v1.1.1...v1.2.0) (2025-10-23)
 
 
