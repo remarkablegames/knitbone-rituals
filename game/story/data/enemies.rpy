@@ -29,7 +29,12 @@ init python:
             for index, enemy in enumerate(self.enemies):
                 xalign_position = self.xalign_position(enemy)
                 renpy.show_screen(f"enemy_stats{index}", enemy, xalign_position)
-                renpy.show(enemy.image(), at_list=[idle, position(xalign_position)], layer=LAYER_ENEMIES)
+                at_list=[position(xalign_position)]
+
+                if renpy.variant("pc"):
+                    at_list.append(idle)
+
+                renpy.show(enemy.image(), at_list=at_list, layer=LAYER_ENEMIES)
 
             renpy.with_statement(dissolve)
 

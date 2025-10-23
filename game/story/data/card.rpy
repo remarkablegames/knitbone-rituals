@@ -227,7 +227,13 @@ init python:
                         if is_enemy:
                             if attack.get("stun"):
                                 target.stunned = True
-                            renpy.show(target.image(), at_list=[idle, shake], layer=LAYER_ENEMIES)
+
+                            at_list=[shake]
+
+                            if renpy.variant("pc"):
+                                at_list.append(idle)
+
+                            renpy.show(target.image(), at_list=at_list, layer=LAYER_ENEMIES)
                         else:
                             renpy.invoke_in_thread(renpy.with_statement, vpunch)
 
