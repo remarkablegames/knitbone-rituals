@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/remarkablegames/knitbone-rituals/compare/v1.1.1...v1.2.0) (2025-10-23)
+
+
+### Features
+
+* **screens:** show enemy action label next to name ([3cd5dcd](https://github.com/remarkablegames/knitbone-rituals/commit/3cd5dcd76ce6a8e0bb19781d49baf2ce0aa75e3e))
+* **transforms:** add idle animation to enemies ([2102eb4](https://github.com/remarkablegames/knitbone-rituals/commit/2102eb4003d13be32a9dd7d616dbd4ae9bf00b4f))
+
 ## [1.1.1](https://github.com/remarkablegames/knitbone-rituals/compare/v1.1.0...v1.1.1) (2025-10-22)
 
 
