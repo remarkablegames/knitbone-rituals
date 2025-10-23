@@ -67,7 +67,7 @@ screen enemy_stats(enemy, xalign_pos):
 
             button:
                 action NullAction()
-                text TEXT_STYLE + enemy.name
+                text TEXT_STYLE + enemy.name + enemy.label()
                 tooltip (enemy.say() or "...")
 
     use tooltip

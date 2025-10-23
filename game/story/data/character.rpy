@@ -52,6 +52,24 @@ init python:
             return f"{self.image_name} {state}"
 
 
+        def label(self) -> str:
+            """
+            Get action label.
+            """
+            if self.stunned:
+                return f" ⁉️"
+
+            attack = self.action("attack", 0)
+            if attack > 0:
+                return f" {{color=[colors.attack]}}{attack}🗡️"
+
+            heal = self.action("heal", 0)
+            if heal > 0:
+                return f" {{color=[colors.heal]}}{heal}🌿"
+
+            return " 💬"
+
+
         def say(self) -> str:
             """
             Get say.
