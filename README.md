@@ -27,12 +27,21 @@ Or download:
 
 Read the [blog post](https://remarkablegames.org/posts/knitbone-rituals/) or watch the [YouTube video](https://youtu.be/BYTcOpZhIaQ).
 
-## How To Play
+## Overview
 
-- Drag the card to the player (bottom-left bar) or to the enemy (entity).
-- Hover over the enemy's name to see their next move.
-- Press **End Turn** when out of **Energy**.
+### How To Play
+
+- Drag the card to the player (bottom-left bar) or to the enemy (entity)
+- Hover over the enemy's name to see their next move
+- Press **End Turn** when out of **Energy**
 - Defeat all the enemies while staying alive!
+
+### Features
+
+- 5 levels with 4 unique enemies
+- Cards have attack, heal, draw, energy, and/or other special effects
+- Reward and shop mechanics (buy, upgrade, and remove cards and stats)
+- Estimated playtime: 15-30 minutes
 
 ## Credits
 
