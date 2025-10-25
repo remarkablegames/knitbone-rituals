@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.2...v1.2.3) (2025-10-25)
+
+
+### Bug Fixes
+
+* **screens:** use the `!i` conversion flag for tooltip ([8c1bb9b](https://github.com/remarkablegames/knitbone-rituals/commit/8c1bb9b50c12ce233d4496025a4a3b4fdcd0ab73))
+
 ## [1.2.2](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.1...v1.2.2) (2025-10-25)
 
 
