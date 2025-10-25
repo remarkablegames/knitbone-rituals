@@ -3,7 +3,7 @@ init python:
 
 
 screen stat(name, current, max):
-    text TEXT_STYLE + "[name] [current]/[max]"
+    text "[TEXT_STYLE][name] [current]/[max]"
     bar value AnimatedValue(current, max):
         xsize 300
 
@@ -11,7 +11,7 @@ screen stat(name, current, max):
 screen player_gold():
     frame:
         background Solid((0, 0, 0, 100))
-        text TEXT_STYLE + "{color=[colors.gold]}Gold: [gold]"
+        text "[TEXT_STYLE]{color=[colors.gold]}Gold: [gold]"
         xpos (40 if renpy.variant("web") else 0)
 
 
@@ -53,7 +53,7 @@ screen tooltip():
             prefer_top True
             frame:
                 background Solid((255, 255, 255, 225))
-                text TEXT_STYLE + tooltip color "#000"
+                text "[TEXT_STYLE][tooltip]" color "#000"
                 xalign 0.5
 
 
@@ -67,7 +67,7 @@ screen enemy_stats(enemy, xalign_pos):
 
             button:
                 action NullAction()
-                text TEXT_STYLE + enemy.name + enemy.label()
+                text "[TEXT_STYLE][enemy.name][enemy.label()!i]"
                 tooltip (enemy.say() or "...")
 
     use tooltip
