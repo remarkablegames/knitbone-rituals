@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.1...v1.2.2) (2025-10-25)
+
+
+### Performance Improvements
+
+* **screens:** optimize screens with const text ([6e2dd4b](https://github.com/remarkablegames/knitbone-rituals/commit/6e2dd4b3e3ad1becf994a58c0fdc1f78bab65b37))
+
 ## [1.2.1](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.0...v1.2.1) (2025-10-23)
 
 
