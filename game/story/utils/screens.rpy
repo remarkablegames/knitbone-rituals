@@ -53,7 +53,7 @@ screen tooltip():
             prefer_top True
             frame:
                 background Solid((255, 255, 255, 225))
-                text "[TEXT_STYLE][tooltip]" color "#000"
+                text "[TEXT_STYLE][tooltip!i]" color "#000"
                 xalign 0.5
 
 
