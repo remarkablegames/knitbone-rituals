@@ -14,7 +14,7 @@
 >
 > This time, Ryohei drags you into another of his “guided rituals”... and before you know it, you’re pulled straight into a TV, trapped in a surreal world of cards, combat, and strange symbols.
 
-Play the game on:
+Play the game:
 
 - [itch.io](https://remarkablegames.itch.io/knitbone-rituals)
 - [remarkablegames](https://remarkablegames.org/knitbone-rituals)
