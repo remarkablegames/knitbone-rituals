@@ -25,7 +25,7 @@ label shop:
             call screen card_add(cards)
 
         "Upgrade a card (-[cost_card_upgrade] gold)
-        {tooltip}Upgrade 1 card in your deck ([player.shop_cards] choices, {i}nonrefundable{/i})" if gold >= cost_card_upgrade:
+        {tooltip}Upgrade 1 card in your deck ([player.shop_cards] choices, nonrefundable)" if gold >= cost_card_upgrade:
             python:
                 config.menu_include_disabled = False
                 gold -= cost_card_upgrade
