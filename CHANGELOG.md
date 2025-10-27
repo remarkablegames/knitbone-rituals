@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.3...v1.2.4) (2025-10-27)
+
+
+### Bug Fixes
+
+* **shop:** remove italic style in tooltip ([99028ab](https://github.com/remarkablegames/knitbone-rituals/commit/99028abe3e225502c5fb39f5b68d8e98c972c189))
+
 ## [1.2.3](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.2...v1.2.3) (2025-10-25)
 
 
