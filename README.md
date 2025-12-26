@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/remarkablegames/knitbone-rituals/blob/master/web-presplash.webp?raw=true" width="600" alt="KnitBone: Rituals">
+  <img src="web-presplash.webp" width="600" alt="KnitBone: Rituals">
 </p>
 
 # KnitBone: Rituals
