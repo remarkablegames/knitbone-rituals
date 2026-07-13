@@ -1,7 +1,7 @@
 label reward:
 
     $ reward_attack = renpy.random.randint(1, 2 + wins // 2)
-    $ reward_heal = renpy.random.randint(1, 3 + wins // 2) * 2
+    $ reward_health = renpy.random.randint(1, 2 + wins // 2) * 2
 
     menu:
         "Claim a reward:"
@@ -11,10 +11,10 @@ label reward:
             play audio "sound/gold.ogg"
             jump reward
 
-        "Max health {color=[colors.heal]}+[reward_heal]
-        {tooltip}Increase max health from [player.health_max] to [player.health_max + reward_heal]":
-            $ player.health += reward_heal
-            $ player.health_max += reward_heal
+        "Max health {color=[colors.heal]}+[reward_health]
+        {tooltip}Increase max health from [player.health_max] to [player.health_max + reward_health]":
+            $ player.health += reward_health
+            $ player.health_max += reward_health
 
         "Max energy {color=[colors.energy]}+1
         {tooltip}Increase max energy from [player.energy_max] to [player.energy_max + 1]" if wins > 4 and renpy.random.random() < 0.1:
