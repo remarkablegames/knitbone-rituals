@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.4...v1.2.5) (2026-07-13)
+
+
+### Bug Fixes
+
+* **reward:** decrease reward health to improve game balance ([560273a](https://github.com/remarkablegames/knitbone-rituals/commit/560273a8440c205da48f4af3c3f0b2d92281b0e7))
+
 ## [1.2.4](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.3...v1.2.4) (2025-10-27)
 
 
