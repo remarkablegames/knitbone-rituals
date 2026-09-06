@@ -1,7 +1,5 @@
 label start:
 
-    $ quick_menu = False # hide bottom menu
-
     stop music fadeout .5
 
     show bg studio1 with dissolve
