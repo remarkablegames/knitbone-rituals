@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.0](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.5...v1.3.0) (2026-09-07)
+
+
+### Features
+
+* **screens:** hide "Save" and "Load" and set game menu to "Preferences" ([af71fb4](https://github.com/remarkablegames/knitbone-rituals/commit/af71fb4ff9c6cdb6bb1d80ba8d14ef772d8a7a86))
+* **scripts:** add tutorial ([be25524](https://github.com/remarkablegames/knitbone-rituals/commit/be255242f2d97ca169513b4a5fa8af40eb6f3281))
+* **scripts:** show player stats after win and add ryohei to win and lose ([a274477](https://github.com/remarkablegames/knitbone-rituals/commit/a2744775810043a8c5d500e92ed5d5b4912690a7))
+* **tutorial:** show ryohei in tutorial ([04f4587](https://github.com/remarkablegames/knitbone-rituals/commit/04f45877127320e2b2b9df59a803b7806aa3c9c8))
+
 ## [1.2.5](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.4...v1.2.5) (2026-07-13)
 
 
