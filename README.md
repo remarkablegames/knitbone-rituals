@@ -23,7 +23,7 @@ Or download:
 
 - [Windows](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/win.zip)
 - [Mac](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/mac.zip)
-- [Linux](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/pc.zip)
+- [Linux](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/linux.tar.bz2)
 
 Read the [blog post](https://remarkablegames.org/posts/knitbone-rituals/) or watch the [YouTube video](https://youtu.be/BYTcOpZhIaQ).
 
