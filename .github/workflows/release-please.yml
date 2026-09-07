@@ -115,9 +115,9 @@ jobs:
       - name: Build web
         run: |
           renpy-launcher web_build . --destination dist
-          rm ../dists/web/web-presplash.jpg
-          mv web-presplash.webp ../dists/web
-          grep -lr web-presplash.jpg ../dists/web | xargs sed -i 's/web-presplash.jpg/web-presplash.webp/g'
+          rm dist/web-presplash.jpg
+          mv web-presplash.webp dist
+          grep -lr web-presplash.jpg dist | xargs sed -i 's/web-presplash.jpg/web-presplash.webp/g'
 
       - name: Upload to Wavedash
         uses: remarkablegames/wavedash-action@v1
