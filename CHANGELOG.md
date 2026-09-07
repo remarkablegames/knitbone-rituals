@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/remarkablegames/knitbone-rituals/compare/v1.3.1...v1.3.2) (2026-09-07)
+
+
+### Bug Fixes
+
+* **tutorial:** improve dialogue ([31a8608](https://github.com/remarkablegames/knitbone-rituals/commit/31a86087e37c1b7afaa4c8daca6f4ba20251abcb))
+
 ## [1.3.1](https://github.com/remarkablegames/knitbone-rituals/compare/v1.3.0...v1.3.1) (2026-09-07)
 
 
