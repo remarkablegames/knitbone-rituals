@@ -14,13 +14,13 @@
 >
 > This time, Ryohei drags you into another of his “guided rituals”... and before you know it, you’re pulled straight into a TV, trapped in a surreal world of cards, combat, and strange symbols.
 
-Play the game:
+Play in your browser:
 
 - [itch.io](https://remarkablegames.itch.io/knitbone-rituals)
 - [Wavedash](https://wavedash.com/games/knitbone-rituals)
 - [remarkablegames](https://remarkablegames.org/knitbone-rituals)
 
-Or download:
+Or download for desktop:
 
 - [Windows](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/win.zip)
 - [Mac](https://github.com/remarkablegames/knitbone-rituals/releases/latest/download/mac.zip)
