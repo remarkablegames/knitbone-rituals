@@ -28,11 +28,11 @@ label tutorial:
     $ levels.start()
 
     ryohei "The enemy’s stats are above."
-    ryohei "Hover over the enemy’s name to see its next action."
+    ryohei "Hover over the enemy’s name to see its next move."
 
     $ deck.draw_cards(player.draw_cards)
 
-    ryohei "You draw cards at the start of each turn."
+    ryohei "You draw cards at the start of your turn."
     ryohei "Drag the card to the {i}enemy{/i} or to your {i}stats{/i} to play it."
 
     show screen player_end_tutorial
