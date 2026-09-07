@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/remarkablegames/knitbone-rituals/compare/v1.3.0...v1.3.1) (2026-09-07)
+
+
+### Continuous Integration
+
+* **github:** fix web build for wavedash in release-please.yml ([f0770f2](https://github.com/remarkablegames/knitbone-rituals/commit/f0770f2b896e3def3632500c81e4bf218034dcbc))
+
 ## [1.3.0](https://github.com/remarkablegames/knitbone-rituals/compare/v1.2.5...v1.3.0) (2026-09-07)
 
 
