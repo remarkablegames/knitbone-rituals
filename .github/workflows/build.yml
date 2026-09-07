@@ -37,7 +37,7 @@ jobs:
           mv web-presplash.webp web
           grep -lr web-presplash.jpg web | xargs sed -i 's/web-presplash.jpg/web-presplash.webp/g'
 
-      - name: Deploy site
+      - name: Deploy to GitHub Pages
         if: github.ref_name == 'master'
         uses: remarkablemark/gitploy-action@v1
         with:
