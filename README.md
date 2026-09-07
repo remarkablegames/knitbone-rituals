@@ -10,7 +10,7 @@
 
 👁️ **KnitBone: Rituals** is a roguelike deckbuilding card game where you battle entities.
 
-> _KnitBone: Rituals_ is a standalone spinoff of the original visual novel, [KnitBone](https://remarkablegames.itch.io/knitbone).
+> _KnitBone: Rituals_ is a standalone spinoff of the original visual novel, [KnitBone](https://store.steampowered.com/app/5008480/KnitBone/).
 >
 > This time, Ryohei drags you into another of his “guided rituals”... and before you know it, you’re pulled straight into a TV, trapped in a surreal world of cards, combat, and strange symbols.
 
