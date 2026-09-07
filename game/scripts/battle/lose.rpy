@@ -11,7 +11,7 @@ label lose:
     hide screen enemy_stats2
     hide screen enemy_stats3
 
-    "You have been defeated."
+    ryohei "Your sacrifice was inevitable...{w=.3} Your blood will feed the entities."
 
     scene black onlayer enemies with Dissolve(1)
 

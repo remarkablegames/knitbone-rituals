@@ -1,7 +1,5 @@
 label shop:
 
-    show screen player_deck(0, 1.0)
-
     python:
         config.menu_include_disabled = True
         cost_base = max(wins, 3)
@@ -81,6 +79,8 @@ label shop:
                 levels.next()
 
             hide screen player_deck
+
+            hide ryohei with Dissolve(1)
 
             jump battle
 

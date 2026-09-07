@@ -18,7 +18,6 @@ label win:
     play music "music/theme3.ogg" volume 0.7
 
     hide screen player_end_turn
-    hide screen player_stats
 
     hide screen enemy_stats0
     hide screen enemy_stats1
@@ -27,7 +26,11 @@ label win:
 
     show screen player_gold
 
-    "You survived the encounter."
+    pause 1
+
+    show ryohei seated smile with dissolve
+
+    ryohei "You survived the trial."
 
     $ wins += 1
     $ interest = ceil(gold * 0.4)
@@ -72,7 +75,7 @@ label reward_card(card, dialogue):
 
     show screen card(card)
 
-    "[dialogue]"
+    ryohei "[dialogue]"
 
     menu:
         "Add this card to your deck?"
