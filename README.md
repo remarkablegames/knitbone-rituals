@@ -17,6 +17,7 @@
 Play the game:
 
 - [itch.io](https://remarkablegames.itch.io/knitbone-rituals)
+- [Wavedash](https://wavedash.com/games/knitbone-rituals)
 - [remarkablegames](https://remarkablegames.org/knitbone-rituals)
 
 Or download:
