@@ -120,7 +120,7 @@ jobs:
           grep -lr web-presplash.jpg dist | xargs sed -i 's/web-presplash.jpg/web-presplash.webp/g'
 
       - name: Upload to Wavedash
-        uses: remarkablegames/wavedash-action@v1
+        uses: remarkablegames/wavedash-action@v2
         with:
           token: ${{ secrets.WAVEDASH_TOKEN }}
           game-id: ${{ secrets.WAVEDASH_GAME_ID }}
